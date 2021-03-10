@@ -11,8 +11,7 @@ uiux:
    meng: false # meng
 
 background:
-   #purecolor: "#eeeeee" # the background color
-   img: "https://dl2.img.timecdn.cn/2021/01/21/theme_ntp_background.md.png"
+   purecolor: "#eeeeee" # the background color
 
 img:
    avatar: "https://ooo.0o0.ooo/2017/05/26/5928368d409dd.png" # your avatar
@@ -72,6 +71,6 @@ lang: ""  # lang
 
 deploy: "" # if you used coding pages
 
-custom_css: "" # Use the assets/css/customCss.css
+custom_css: "assets/css/customCss.css" # Use the assets/css/customCss.css
 
-custom_js: "" # Use the assets/js/customJS.js
+custom_js: "assets/js/customJS.js" # Use the assets/js/customJS.js
