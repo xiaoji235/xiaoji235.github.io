@@ -11,7 +11,8 @@ uiux:
    meng: false # meng
 
 background:
-   purecolor: "#eeeeee" # the background color
+   #purecolor: "#eeeeee" # the background color
+   img: "https://dl2.img.timecdn.cn/2021/01/21/theme_ntp_background.md.png"
 
 img:
    avatar: "https://ooo.0o0.ooo/2017/05/26/5928368d409dd.png" # your avatar
