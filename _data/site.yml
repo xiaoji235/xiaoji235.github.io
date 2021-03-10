@@ -71,6 +71,6 @@ lang: ""  # lang
 
 deploy: "" # if you used coding pages
 
-custom_css: "" # Use the assets/css/customCss.css
+custom_css: "https://cdn.jsdelivr.net/npm/mdui@1.0.1/dist/css/mdui.min.css" # Use the assets/css/customCss.css
 
 custom_js: "" # Use the assets/js/customJS.js
