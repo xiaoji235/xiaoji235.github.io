@@ -55,7 +55,6 @@ h1.mdui-card-primary-title{
 
 body,header{
     background-color:{{site.data.site.background.purecolor}};
-    background-image: url(https://dl2.img.timecdn.cn/2021/01/21/theme_ntp_background.md.png);
 }
 ::-webkit-scrollbar {
     width: 10px;
