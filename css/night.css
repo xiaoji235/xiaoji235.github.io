@@ -673,6 +673,7 @@ div#setbg {
 	z-index: 9
 }
 div#settingpage {
+	color:white;
 	position:fixed;
 	margin: auto;
 	padding:10px;
