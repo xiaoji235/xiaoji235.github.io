@@ -146,7 +146,7 @@ function(t, e, n) {
             Avatar.push({
                 appKey: "X2H3RPZB4013",
                 pageId: "Edge",
-                serverUrl: "https://fsr.lenovomm.com/reaper/server/image2/_t.gif",
+                serverUrl: "https://dl.img.timecdn.cn/2021/12/11/picture.png",
                 channel: "index",
                 versionName: "1.0.0",
                 versionCode: "100"
