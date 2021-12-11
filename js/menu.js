@@ -9,7 +9,7 @@ function search() {
         id: 0,
         name: "百度",
         url: "https://www.baidu.com/s?wd=",
-        img: "url('search/baidu.svg')"
+        img: "url('https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/search/baidu.svg')"
     };
     function l(e) {
         return $(e).contents().filter(function(e, t) {
