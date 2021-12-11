@@ -23,25 +23,25 @@ function(t, e, n) {
     n.n(i).a
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/google.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/google.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/bing.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/bing.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/bilibili.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/bilibili.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/github.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/github.png"
 },
 function(t, e) {
-    t.exports = "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/zhihu.png"
+    t.exports = "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/zhihu.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/aiqiyi.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/aiqiyi.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/weibo.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/weibo.png"
 },
 function(t, e, n) {
     "use strict";
@@ -49,13 +49,13 @@ function(t, e, n) {
     n.n(i).a
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/logo/toutiao.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/logo/toutiao.png"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/weather/index.html"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/weather/index.html"
 },
 function(t, e, n) {
-    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/image/dfa58207c2e.png"
+    t.exports = n.p + "https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/image/dfa58207c2e.png"
 },
 function(t, e, n) {
     t.exports = n.p + "yiyan/index.html"
