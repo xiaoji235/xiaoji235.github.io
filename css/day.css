@@ -1,6 +1,242 @@
 body{
 	background-color:#333333;
 }
+
+
+
+
+/**搜索**/
+html, body,footer,table,iframe,div,li,ul,button,a,i,em,b,img,h1,h2,h3,dd {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+
+#search {
+	position: relative;
+	width: 820px;
+	margin: 10px auto 0 auto;
+	height: 50px;
+	line-height: 50px;
+	z-index: 3
+}
+
+
+#search-box .search-icon {
+	position: absolute;
+	left: 13px;
+	top: 13px;
+	width: 25px;
+	height: 25px;
+	overflow: hidden;
+	cursor: pointer;
+	background-size: cover;
+	-webkit-background-size: cover;
+	-o-background-size: cover;
+}
+
+#search-box .s-key {
+	box-sizing: border-box;
+	float: left;
+	padding: 2px 10px 2px 50px;
+	height: 50px;
+	width: 750px;
+	font-size: 16px;
+	border: none;
+	outline: none;
+	border-radius: 10px 0 0 10px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.2);
+	background-color: #ffffff59;
+	backdrop-filter: blur(10px);
+	color: white
+}
+
+#search-box .s-btn {
+	float: left;
+	width: 50px;
+	height: 50px;
+	color: #888888;
+	border: none;
+	outline: none;
+	border-radius: 0 10px 10px 0;
+	cursor: pointer;
+	background-color: #ffffff59;
+	backdrop-filter: blur(10px);
+	text-align: center;
+}
+
+button#search-btn{
+	height: 50px;
+    width: 70px;
+    border: 0;
+    background-color: #ffffff59;
+    backdrop-filter: blur(10px);
+	border-radius: 0 10px 10px 0;
+	font-size: 25px;
+	color:white;
+	cursor: pointer;
+}
+
+.s-btn i {
+	font-size: 24px;
+	line-height: 50px
+} 
+#search-box .s-btn:hover {
+	color: #6b7184
+}
+
+.search-hot-text {
+	position: absolute;
+	top: 60px;
+	z-index: 100;
+	width: 820px;
+	border-radius: 10px;
+	border-top: none;
+	background: #ffffff59;
+    backdrop-filter: blur(10px);
+	overflow: hidden;
+}
+
+.search-hot-text .space-line {
+	width: 776px;
+	height: 1px;
+	border-top: 1px solid #f2f2f2;
+	margin: 9px auto 0 auto;
+}
+
+.search-hot-text ul {
+	margin: 0;
+	padding: 5px 0 5px 0
+}
+
+.search-hot-text li {
+	line-height: 35px;
+	font-size: 14px;
+	padding: 0 20px;
+	cursor: pointer;
+	color: white;
+}
+
+.search-hot-text li i {
+	color: #e5e5e5;
+	margin-right: 5px
+}
+
+.search-hot-text li.current {
+	background: #f1f1f1;
+	color: black
+}
+
+.search-hot-text li:hover {
+	background: #ffffff59;
+	color: black;
+	cursor: pointer;
+	transition: all .3s;
+		animation-name: flash;
+}
+
+.search-hot-text .space-tips {
+	width: 776px;
+	line-height: 30px;
+	font-size: 14px;
+	margin: 9px auto 0 auto
+}
+
+.space-tips .offHistory {
+	float: right;
+	cursor: pointer;
+	color: white
+}
+
+.space-tips .offHistory:hover {
+	color: #E2D600
+}
+.search-engine {
+	position: fixed;
+	margin-top: 6px;
+	width: 125px;
+	height: 320px;
+	background: #FFFFFF59;
+	padding: 15px 0 0 15px;
+	border-radius: 4px;
+	box-shadow: 0 4px 10px rgba(0,0,0,.2);
+	transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	-webkit-transition: all 0.3s;
+	-o-transition: all 0.3s;
+	display: none;
+	backdrop-filter: blur(10px);
+	z-index: 3
+}
+
+.search-engine ul::before {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	top: -15px;
+	border-top: 7px solid transparent;
+	border-right: 8px solid transparent;
+	border-bottom: 8px solid #ffffff59;
+	border-left: 8px solid transparent;
+}
+
+.search-engine ul {
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	height: 318px
+}
+
+.search-engine-list::after {
+	content: '';
+	width: 90px;
+	height: 20px;
+	position: absolute;
+	top: -20px;
+	left: 1px
+}
+
+.search-engine-list li {
+	width: 90px;
+	line-height: 24px;
+	font-size: 14px;
+	padding: 6px 10px 6px 10px;
+	margin: 0 8px 8px 0;
+	background: #fff0;
+	color: #fff;
+	cursor: pointer
+}
+
+.search-engine-list li:hover{
+	background-color: #ffffff59;
+	border-radius: 5px;
+	transition: all .3s;
+	animation-name: flash;
+}
+
+.search-engine-list li span {
+	width: 20px;
+	height: 20px;
+	float: left;
+	margin-right: 5px;
+	margin-top: 2px;
+	background-size: 100% 100%;
+	-webkit-background-size: 100% 100%;
+	-o-background-size: 100% 100%;
+}
+::marker{
+	font-size: 0 !important;
+}
+.fa-clock:before {
+		content: url('https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/fonts/dot.svg');
+	font-size: 20px;
+	padding-top: 5px;
+}
+
+
+
+
 .backg{
 	opacity: 0;
 	transition: all 350ms linear;
@@ -619,238 +855,6 @@ color:#dfdfdf;
 a.footp2{
 color:#dfdfdf;
 }
-
-
-/**搜索**/
-html, body,footer,table,iframe,div,li,ul,button,a,i,em,b,img,h1,h2,h3,dd {
-	margin: 0;
-	padding: 0;
-	border: 0;
-}
-
-#search {
-	position: relative;
-	width: 820px;
-	margin: 10px auto 0 auto;
-	height: 50px;
-	line-height: 50px;
-	z-index: 3
-}
-
-
-#search-box .search-icon {
-	position: absolute;
-	left: 13px;
-	top: 13px;
-	width: 25px;
-	height: 25px;
-	overflow: hidden;
-	cursor: pointer;
-	background-size: cover;
-	-webkit-background-size: cover;
-	-o-background-size: cover;
-}
-
-#search-box .s-key {
-	box-sizing: border-box;
-	float: left;
-	padding: 2px 10px 2px 50px;
-	height: 50px;
-	width: 750px;
-	font-size: 16px;
-	border: none;
-	outline: none;
-	border-radius: 10px 0 0 10px;
-	box-shadow: 0 4px 10px rgba(0,0,0,.2);
-	background-color: #ffffff59;
-	backdrop-filter: blur(10px);
-	color: white
-}
-
-#search-box .s-btn {
-	float: left;
-	width: 50px;
-	height: 50px;
-	color: #888888;
-	border: none;
-	outline: none;
-	border-radius: 0 10px 10px 0;
-	cursor: pointer;
-	background-color: #ffffff59;
-	backdrop-filter: blur(10px);
-	text-align: center;
-}
-
-button#search-btn{
-	height: 50px;
-    width: 70px;
-    border: 0;
-    background-color: #ffffff59;
-    backdrop-filter: blur(10px);
-	border-radius: 0 10px 10px 0;
-	font-size: 25px;
-	color:white;
-	cursor: pointer;
-}
-
-.s-btn i {
-	font-size: 24px;
-	line-height: 50px
-} 
-#search-box .s-btn:hover {
-	color: #6b7184
-}
-
-.search-hot-text {
-	position: absolute;
-	top: 60px;
-	z-index: 100;
-	width: 820px;
-	border-radius: 10px;
-	border-top: none;
-	background: #ffffff59;
-    backdrop-filter: blur(10px);
-	overflow: hidden;
-}
-
-.search-hot-text .space-line {
-	width: 776px;
-	height: 1px;
-	border-top: 1px solid #f2f2f2;
-	margin: 9px auto 0 auto;
-}
-
-.search-hot-text ul {
-	margin: 0;
-	padding: 5px 0 5px 0
-}
-
-.search-hot-text li {
-	line-height: 35px;
-	font-size: 14px;
-	padding: 0 20px;
-	cursor: pointer;
-	color: white;
-}
-
-.search-hot-text li i {
-	color: #e5e5e5;
-	margin-right: 5px
-}
-
-.search-hot-text li.current {
-	background: #f1f1f1;
-	color: black
-}
-
-.search-hot-text li:hover {
-	background: #ffffff59;
-	color: black;
-	cursor: pointer;
-	transition: all .3s;
-		animation-name: flash;
-}
-
-.search-hot-text .space-tips {
-	width: 776px;
-	line-height: 30px;
-	font-size: 14px;
-	margin: 9px auto 0 auto
-}
-
-.space-tips .offHistory {
-	float: right;
-	cursor: pointer;
-	color: white
-}
-
-.space-tips .offHistory:hover {
-	color: #E2D600
-}
-.search-engine {
-	position: fixed;
-	margin-top: 6px;
-	width: 125px;
-	height: 320px;
-	background: #FFFFFF59;
-	padding: 15px 0 0 15px;
-	border-radius: 4px;
-	box-shadow: 0 4px 10px rgba(0,0,0,.2);
-	transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-webkit-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	display: none;
-	backdrop-filter: blur(10px);
-	z-index: 3
-}
-
-.search-engine ul::before {
-	content: '';
-	width: 0;
-	height: 0;
-	position: absolute;
-	top: -15px;
-	border-top: 7px solid transparent;
-	border-right: 8px solid transparent;
-	border-bottom: 8px solid #ffffff59;
-	border-left: 8px solid transparent;
-}
-
-.search-engine ul {
-	display: flex;
-	flex-direction: column;
-	flex-wrap: wrap;
-	height: 318px
-}
-
-.search-engine-list::after {
-	content: '';
-	width: 90px;
-	height: 20px;
-	position: absolute;
-	top: -20px;
-	left: 1px
-}
-
-.search-engine-list li {
-	width: 90px;
-	line-height: 24px;
-	font-size: 14px;
-	padding: 6px 10px 6px 10px;
-	margin: 0 8px 8px 0;
-	background: #fff0;
-	color: #fff;
-	cursor: pointer
-}
-
-.search-engine-list li:hover{
-	background-color: #ffffff59;
-	border-radius: 5px;
-	transition: all .3s;
-	animation-name: flash;
-}
-
-.search-engine-list li span {
-	width: 20px;
-	height: 20px;
-	float: left;
-	margin-right: 5px;
-	margin-top: 2px;
-	background-size: 100% 100%;
-	-webkit-background-size: 100% 100%;
-	-o-background-size: 100% 100%;
-}
-::marker{
-	font-size: 0 !important;
-}
-.fa-clock:before {
-		content: url('https://cdn.jsdelivr.net/gh/xiaoji235/pure-newtab/fonts/dot.svg');
-	font-size: 20px;
-	padding-top: 5px;
-}
-
-
 
 /**适应分辨率**/
 @media screen and (max-width:1010px) {
