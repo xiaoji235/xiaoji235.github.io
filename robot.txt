@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: 
+Disallow: https://xiaoji235.github.io/notice/
+Disallow: https://xiaoji235.github.io/other/
+Sitemap: https://xiaoji235.github.io/sitemap.xml
