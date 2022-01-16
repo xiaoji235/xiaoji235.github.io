@@ -11,6 +11,7 @@
   <link rel="preconnect" href="//cdn.w3cbus.com">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/mdui@1.0.2/dist/css/mdui.min.css"/>
   <link rel="stylesheet" href="https://tuoguan.rth1.me/about/css/index.css">
+  <link rel="stylesheet" href="https://tuoguan.rth1.me/about/css/dpi.css">
 </head>
 <body
   class="
@@ -119,26 +120,40 @@
   </div>
 	<div class="container p-index mdui-container">
 <h1 class="title mdui-text-color-theme">关于我</h1>
-<div class="mdui-card" style="width: 90%;margin: 0 60px;"> 
+<div class="mdui-card"> 
   <div class="mdui-card-media">
-    <img src="https://www.retiehe.com/backend/bing/1080p"/>
-	  
-	<!--备用地址<img src="https://api-php.nyan.vip/bing"/>-->
-	  
+    <img src="https://api-php.nyan.vip/bing"/>
     <div class="mdui-card-media-covered">
       <div class="mdui-card-primary"  style="backdrop-filter: blur(5px);">
-		  <img class="avatar" style="width: 48px; height: 48px; border-radius: 100%" src="https://avatars.githubusercontent.com/u/73387366"/><br>
+		  <img class="avatar" style="width: 48px; border-radius: 100%;" src="https://avatars.githubusercontent.com/u/73387366"/><br>
         <div class="mdui-card-primary-title">小基同學</div>
         <div class="mdui-card-primary-subtitle">一位喜爱html的电气大学生</div>
+		  <div class="aboutbtn">
 		<button class="mdui-btn mdui-ripple" ><a style="text-decoration: none; color: white" href="https://space.bilibili.com/420259074" target="_blank">BiliBili</a></button>
+		<button class="mdui-btn mdui-ripple" mdui-dialog="{target: '#juanzhu'}">donation</button>
     	<button class="mdui-btn mdui-ripple"><a style="text-decoration: none; color: white" href="https://github.com/xiaoji235" target="_blank">Github</a></button>
-		  <div style="float: right" class="wallpaper">壁纸来源于bing</div>
+			  	<div class="wallpaper" style="float: right">壁纸来源于bing</div>
+			  </div>
       </div>
     </div>
   </div>
 </div>
 
 	<p align="right" class="mdui-text-color-theme">此页面由MDUI提供设计支持！</p>
+		
+		
+		<div class=" mdui-dialog mdui-dialog-open" id="juanzhu" style="top: 289.75px; display: none; height: 166.5px;">
+          <div class="mdui-dialog-title" style="text-align: center">捐助这小子吗？</div>
+          <div class="payqr" style="display: flex; justify-content: center;">
+			<img class="wx" style="margin-right: 30px" src="https://dl.img.timecdn.cn/2020/12/30/wechat.png">
+			<img class="zfb" style="margin-left: 30px" src="https://dl.img.timecdn.cn/2020/12/30/alipay.png">
+			</div>
+          <div class="mdui-dialog-actions">
+            <button class="mdui-btn mdui-ripple" mdui-dialog-close="">残忍拒绝</button>
+          </div>
+        </div>
+		
+		
 </div>
 	
 <div class="footer-nav mdui-color-theme">
