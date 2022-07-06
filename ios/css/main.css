@@ -1,0 +1,225 @@
+body {
+	font-family:SF Pro Text,Helvetica Neue,Helvetica,Arial,sans-serif;
+	color:#333;
+	font-family:SF Pro Text,Helvetica Neue,sans-serif;
+	-webkit-font-smoothing:antialiased;
+	-moz-osx-font-smoothing:grayscale
+}
+
+.footer {
+	background-size:736px 44px;
+	margin:0 auto;
+	max-width:736px;
+	height:44px;
+	color:#727272
+}
+.footer,.footer .footer-icloud {
+	background-repeat:no-repeat;
+	background-position:0 0;
+	position:relative
+}
+.footer .footer-icloud {
+	background-size:81px 22px;
+	height:22px;
+	width:81px;
+	margin:10px auto;
+	top:15px
+}
+.footer .copyright {
+	position:relative;
+	top:14px;
+	padding-bottom:50px;
+	font-size:11px;
+	line-height:15px;
+	text-align:center
+}
+.privacy,.terms {
+	padding-left:4px
+}
+.bar-after {
+	display:inline-block;
+	padding-right:4px
+}
+
+.copyright-dir {
+	display:inline-block;
+	margin-right:4px
+}
+.copyright-dir,.copyright-dir[dir=ltr],.copyright-dir[dir=rtl],[dir=ltr] .copyright-dir,[dir=rtl] .copyright-dir {
+	direction:ltr
+}
+
+@media only screen and (max-device-width:568px) {
+	.main {
+	width:100%
+}
+.footer {
+	background-size:320px 36px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	width:320px;
+	height:36px
+}
+}@media only screen and (min-device-width:600px) and (max-device-width:800px) {
+	.footer {
+	background-size:580px 44px;
+	background-repeat:no-repeat;
+	background-position:0 0;
+	max-width:580px;
+	height:44px
+}
+}.spinner-32px-f3f5f5 {
+	width:32px;
+	height:32px;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	background-position:0 0
+}
+@media (-webkit-min-device-pixel-ratio:1.5),(min--moz-device-pixel-ratio:1.5),(min-resolution:1.5dppx) {
+	.spinner-32px-f3f5f5 {
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-size:32px 32px
+}
+}
+
+@media only screen and (min-device-width:320px) and (max-device-width:480px) {
+	.main {
+	width:100%
+}
+.main .text-message {
+	font-size:25px
+}
+.main .header-title {
+	margin-bottom:12px
+}
+.main .body-message {
+	padding:0 0 0 20px;
+	max-width:296px
+}
+.main .subscription-text {
+	font-size:12px;
+	width:unset;
+	max-width:470px
+}
+body.rtl .body-message {
+	padding:0 20px 0 0;
+	text-align:right
+}
+}body {
+	padding:0;
+	margin:0;
+	background:#fff;
+	color:#000
+}
+@media (prefers-color-scheme:dark) {
+	body {
+	background:#1e1f24;
+	color:#fff
+}
+}h1 {
+	font-size:1.4rem;
+	font-weight:500
+}
+@media (prefers-color-scheme:dark) {
+	.bar-after:after {
+	background:#727272
+}
+}main {
+	padding:2em
+}
+main #loading {
+	margin-top:2em;
+	text-align:center
+}
+main #loading .spinner-32px-f3f5f5 {
+	width:32px;
+	height:32px;
+	background-position:0 0;
+	background-repeat:no-repeat;
+	background-size:32px 32px;
+	vertical-align:middle;
+	display:inline-block;
+	float:none
+}
+main #loading .text {
+	vertical-align:middle
+}
+main #shortcut-container {
+	text-align:center
+}
+@media only screen and (min-height:600px) {
+	main #shortcut-container {
+	margin-top:3em
+}
+}@media only screen and (min-height:900px) {
+	main #shortcut-container {
+	margin-top:6em
+}
+}main #shortcut-icon {
+	width:60px;
+	height:60px;
+	box-shadow:0 4px 8px 0 rgba(0,0,0,.14);
+	border-radius:10px
+}
+main #shortcut-name {
+	font-size:34px;
+	letter-spacing:-.82px
+}
+main #shortcut-description {
+	font-size:17px;
+	color:#36393e;
+	text-align:center;
+	line-height:22px;
+	font-weight:400
+}
+@media (prefers-color-scheme:dark) {
+	main #shortcut-description {
+	color:#acb2bb
+}
+}header {
+	padding:8px 16px;
+	background:#323232;
+	color:#fff;
+	text-align: center;
+}
+header h1 {
+	margin:0;
+	padding:0
+}
+footer {
+	position:fixed;
+	bottom:0;
+	left:0;
+	right:0;
+	background:#fafafa
+}
+@media (prefers-color-scheme:dark) {
+	footer {
+	background:#191a1e
+}
+}
+
+footer a.primary {
+	background:#0169d9;
+	color:#fff;
+	font-weight:500
+}
+footer a.primary:hover {
+	background:rgba(1,105,217,.9)
+}
+footer a.primary:active {
+	background:#015dc0;
+	-webkit-transform:scale(.95);
+	transform:scale(.95)
+}
+footer .footer {
+	height:42px;
+	background-image:none
+}
+footer .footer .footer-icloud {
+	display:none
+}
+footer .footer .copyright {
+	padding:0 20px
+}

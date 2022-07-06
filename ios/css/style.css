@@ -1,0 +1,31 @@
+.logo{
+	width: 60px;
+	height: 60px;
+	box-shadow: 0 4px 8px 0 rgb(0 0 0 / 14%);
+	border-radius: 10px;
+}
+.neirong{
+	display: inline-block;
+	margin: 0 2% 0px 2%;
+}
+
+div#shortcut{
+	background-image: url(https://dl3.img.timecdn.cn/2022/07/06/shortcut.png);
+	height: 60px;
+	background-size: cover;
+	border-radius: 10px;
+}
+
+/*œ¬‘ÿ∞¥≈•*/
+a#downloadbtn{
+	text-decoration: none;
+
+	color: white;
+}
+div#download{
+background: rgba(1,105,217,.9);
+    padding:10px;
+    border-radius: 10px;
+text-decoration: none;
+}
+
