@@ -1,0 +1,651 @@
+﻿html,body,address,blockquote,div,dl,form,h1,h2,h3,h4,h5,h6,ol,p,pre,table,ul,dd,dt,li,tbody,td,tfoot,th,thead,tr,button,del,ins,map,object,a,abbr,acronym,b,bdo,big,br,cite,code,dfn,em,i,img,kbd,q,samp,small,span,strong,sub,sup,tt,var,legend,fieldset {
+	/* margin:0; */
+	/* padding:0; */
+}
+
+img,fieldset {
+	border: 0;
+}
+/* set image max width to 100% */
+img {
+	max-width: 100%;
+	height: auto;
+	width: auto\9;
+	/* ie8 */
+}
+/* set html5 elements to block */
+
+/************************************************************************************
+GENERAL STYLING
+*************************************************************************************/
+
+
+/*通用页面样式、顶部*/
+* {
+	margin: 0;
+	padding: 0;
+	list-style-image: none;
+	list-style-type: none;
+}
+
+html {
+	background-color: #f8fafe;
+	background-repeat: repeat-x;
+	background-position: center bottom;
+}
+
+body {
+}
+
+a {
+	color: #026acb;
+	text-decoration: none;
+	outline: none;
+}
+
+p {
+	margin: 0 0 1.2em;
+	padding: 0;
+}
+/* list */
+ul,ol {
+	padding: 0;
+	line-height: 140%;
+}
+
+li {
+	/* margin:0 0 .5em 0; */
+	/* padding:0; */
+	line-height: 1.42857143;
+}
+/* headings */
+h1,h2,h3,h4,h5,h6 {
+	line-height: 1.4em;
+	color: #000;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+h2 {
+	font-size: 1.6em;
+}
+
+h3 {
+	font-size: 1.4em;
+}
+
+h4 {
+	font-size: 1.2em;
+}
+
+h5 {
+	font-size: 1.1em;
+}
+
+h6 {
+	font-size: 1em;
+}
+/* reset webkit search input styles */
+input[type=search] {
+	-webkit-appearance: none;
+	outline: none;
+}
+
+input[type="search"]::-webkit-search-decoration,input[type="search"]::-webkit-search-cancel-button {
+	display: none;
+}
+/************************************************************************************
+STRUCTURE
+*************************************************************************************/
+#pagewrap {
+	width: 100%;
+	font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	background-repeat: repeat-y;
+	background-position: center;
+	/* margin:-20px auto; */
+}
+
+img {
+	border: none;
+}
+
+.fix {
+	clear: both;
+	height: 1px;
+	font-size: 0px;
+}
+
+#crumb {
+	color: #888;
+	border-top: 1px dashed #ECEDE8;
+	border-bottom: 1px solid #ECEDE8;
+	margin-top: -1px;
+	position: relative;
+	_zoom: 1;
+	zoom: 1;
+	padding: 10px 0;
+}
+/*
+#header-right {
+	width:680px;
+	overflow:hidden;
+}
+*/
+#header-icons {
+	float: right;
+	margin: -65px -7px 0 0;
+}
+
+#header-icons ul li {
+	float: left;
+	padding-top: 20px;
+}
+
+#weixin {
+	font-size: 32px;
+	color: #a7a7a7;
+	margin-left: -3px;
+}
+
+
+
+#qijishow {
+	font-size: 55px;
+	color: #a7a7a7;
+}
+
+#qijishow:hover {
+	color: #d1ab79;
+}
+
+#weixin:hover {
+	color: #d1ab79;
+}
+
+
+
+#liuyan:hover {
+	color: #d1ab79;
+}
+
+#main, #header-container, #footer-content, #copyright_index_k, #central2 {
+	margin-top: -11px;
+	margin: auto;
+	background-color: #F8FAFEf7;
+	height: 80px;
+	width: 1349px;
+    /* margin-top: 16px; */
+	margin: auto;
+       /* position: fixed; */
+	z-index: 200;
+	height: 80px;
+	width: 1349px;
+}
+
+#header-icons .icon-ips {
+	background-position: 3px -225px;
+}
+
+#header-icons .icon-ips:hover {
+	background-position: 3px -265px;
+}
+
+#header-icons .icon-ipc {
+	background-position: -35px -225px;
+}
+
+#header-icons .icon-ipc:hover {
+	background-position: -35px -263px;
+}
+
+#header-icons .icon-bzk {
+	background-position: -107px -198px;
+}
+
+#header-icons .icon-bzk:hover {
+	background-position: -107px -251px;
+}
+
+#header-icons .icon-zhaofile {
+	background-position: -143px -225px;
+}
+
+#header-icons .icon-zhaofile:hover {
+	background-position: -143px -265px;
+}
+
+.top {
+	height: 150px;
+	width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nav {
+	height: 80px;
+	padding-top: 45px;
+	float: right;
+	width: 170px;
+}
+
+.nav_dhrs {
+	height: 53px;
+	width: 53px;
+	float: right;
+}
+
+.nav_dhrs a {
+	text-decoration: none;
+	display: block;
+	height: 53px;
+	width: 53px;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: -106px center;
+}
+
+.nav_dhrs a:hover {
+	text-decoration: none;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: right center;
+}
+
+.nav_design {
+	height: 53px;
+	width: 53px;
+	float: right;
+}
+
+.nav_design a {
+	text-decoration: none;
+	display: block;
+	height: 53px;
+	width: 53px;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: left center;
+}
+
+.nav_design a:hover {
+	text-decoration: none;
+	background-image: url(../img/nav.png);
+	background-repeat: no-repeat;
+	background-position: -53px center;
+}
+
+.nav_x {
+	height: 42px;
+	float: right;
+}
+
+.book_shuju {
+	height: 12px;
+	width: 50px;
+	float: right;
+	padding-top: 4px;
+}
+/*微博分享、链接*/
+.links {
+	width: 1180px;
+	margin-right: auto;
+	margin-left: auto;
+	padding-top: 45px;
+	height: 97px;
+	border-bottom-width: 1px;
+	border-bottom-style: solid;
+	border-bottom-color: #DDD;
+}
+
+.follow {
+	float: left;
+	height: 45px;
+}
+
+.follow_icon {
+	width: 45px;
+	float: left;
+	height: 45px;
+	text-align: center;
+	padding-right: 15px;
+}
+
+.follow_sina {
+	width: 45px;
+	float: left;
+	height: 45px;
+	padding-right: 15px;
+}
+
+.follow_sina a {
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+}
+
+.follow_sina a:hover {
+	text-decoration: none;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: left bottom;
+}
+
+.follow_qq {
+	width: 45px;
+	float: left;
+	height: 45px;
+	padding-right: 15px;
+}
+
+.follow_qq a {
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -45px top;
+}
+
+.follow_qq a:hover {
+	text-decoration: none;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -45px bottom;
+}
+
+.follow_renren {
+	width: 45px;
+	float: left;
+	height: 45px;
+	padding-right: 15px;
+}
+
+.follow_renren a {
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -90px top;
+}
+
+.follow_renren a:hover {
+	text-decoration: none;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -90px bottom;
+}
+
+.follow_qzone {
+	width: 45px;
+	float: left;
+	height: 45px;
+	padding-right: 15px;
+}
+
+.follow_qzone a {
+	text-decoration: none;
+	display: block;
+	height: 45px;
+	width: 45px;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -135px top;
+}
+
+.follow_qzone a:hover {
+	text-decoration: none;
+	background-image: url(../img/share.png);
+	background-repeat: no-repeat;
+	background-position: -135px bottom;
+}
+
+#sidebar {
+	float: left;
+	width: 100%;
+}
+
+.designs {
+	margin: auto;
+	background-color: #F8FAFE;
+	background-repeat: no-repeat;
+	background-position: right top;
+	height: 577px;
+}
+/*通用底部*/
+.ry {
+	float: right;
+	height: 30px;
+	padding-top: 40px;
+}
+
+.hda {
+	float: left;
+	height: 30px;
+	width: 167px;
+}
+
+.hda a {
+	display: block;
+	height: 30px;
+	width: 167px;
+	background-image: url(../img/identity.png);
+	background-position: right top;
+}
+
+.hda a:hover {
+	text-decoration: none;
+	background-image: url(../img/identity.png);
+	background-position: right bottom;
+}
+
+.flipboard {
+	float: left;
+	height: 30px;
+	width: 964px;
+	padding-right: 26px;
+	margin-top: 18px;
+}
+
+.flipboard a {
+	display: block;
+	height: 13px;
+	width: 430px;
+	background-image: url(../img/identity.png);
+	background-position: left top;
+	margin-left: 550px;
+}
+
+.icon a {
+	text-decoration: none;
+	display: block;
+	height: 27px;
+	width: 193px;
+	background-image: url(../img/design_icon.png);
+	background-position: center top;
+	margin-top: 7px;
+}
+
+.icon a:hover {
+	text-decoration: none;
+	background-image: url(../img/design_icon.png);
+	background-position: center bottom;
+	margin-top: 7px;
+}
+
+.copyrights {
+	min-width: 1180px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F8FAFE;
+	padding-top: 10ex;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: rgba(241, 241, 241, 0.67);
+	height: 100px;
+}
+
+.copyrights_z {
+	/*float:left; */
+}
+
+.copyrights_z dd.about_logo {
+	width: 104px;
+	float: right;
+	padding-right: 5px;
+	padding-top: 10px;
+}
+
+.copyrights_z dd.about_logo a {
+	display: block;
+	width: 128px;
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+
+.copyrights_z dd.about_logo a:hover {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	box-shadow: 0 30px 28px -16px rgba(0, 0, 0, 0.26);
+	transform: translate(0, -4px);
+}
+
+.copyrights_z dd.copyrights_wz {
+	height: 50px;
+	font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 14px;
+	color: #999999;
+	float: left;
+	overflow: hidden;
+	-webkit-font-smoothing: antialiased;
+}
+
+.copyrights_z dd.copyrights_wz a {
+	-webkit-transition: all 0.3s ease-in-out;
+	-moz-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+	font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #666666;
+	line-height: 45px;
+	text-decoration: none;
+}
+
+.copyrights_z dd.copyrights_wz a:hover {
+	text-decoration: none;
+	color: #13e0bc;
+}
+
+.copyrights_c {
+	min-width: 1180px;
+	max-width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #F8FAFE;
+	padding-top: 25px;
+	border-top-width: 1px;
+	border-top-style: solid;
+	border-top-color: #f1f3f7;
+	height: 35px;
+	-webkit-font-smoothing: antialiased;
+}
+
+
+
+.copyrights_certificate {
+	height: 30px;
+	font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 12px;
+	color: #999999;
+	float: right;
+	/* padding-right:3%; */
+}
+
+.copyrights_certificate a {
+	text-decoration: none;
+	color: #999999;
+}
+
+.copyrights_certificate a:hover {
+	text-decoration: none;
+	color: #000000;
+}
+
+.statistics {
+	height: 15px;
+	font-family: "Helvetica Neue For Number", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-size: 11px;
+	color: #EAEAEA;
+	position: fixed;
+	bottom: -20px;
+}
+
+.statistics a {
+	color: #EAEAEA;
+	text-decoration: none;
+}
+
+.statistics a:hover {
+	text-decoration: none;
+}
+/*s底部*/
+.about_copyright {
+	height: 170px;
+	z-index: 1000;
+	width: 1160px;
+	margin-right: auto;
+	margin-left: auto;
+}
+/*浏览器滚动条*/
+::-webkit-scrollbar {
+	width: 5px;
+	height: 5px
+}
+
+::-webkit-scrollbar-button:vertical {
+	display: none
+}
+
+::-webkit-scrollbar-track:vertical {
+	background-color: black
+}
+
+::-webkit-scrollbar-track-piece {
+	background: #EAEAEA
+}
+
+::-webkit-scrollbar-thumb:vertical {
+	background-color: #afafaf;
+	border-radius: 4px
+}
+
+::-webkit-scrollbar-thumb:vertical:hover {
+	background-color: #afafaf
+}
+
+::-webkit-scrollbar-corner:vertical {
+	background-color: #afafaf
+}
+
+::-webkit-scrollbar-resizer:vertical {
+	background-color: #FF6E00
+}

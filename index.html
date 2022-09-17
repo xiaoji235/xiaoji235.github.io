@@ -1,0 +1,399 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+		<title>Welcome To My Github！</title>
+		<meta name="Keywords" content="关键词">
+		<meta name="description" content="简介">
+		<meta name="apple-mobile-web-app-capable" content="yes">
+		<meta name="apple-mobile-web-app-status-bar-style" content="black">
+		<meta name="apple-mobile-web-app-title" content="Welcome To My Github！">
+		<meta name="msapplication-TileImage" content="img/icon-144x144.png">
+		<meta name="msapplication-TileColor" content="#2F3BA2">
+
+		<link rel="shortcut icon" href="img/ico.ico" type="img/x-icon" />
+		<link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="img/touch-icon-ipad-retina.png">
+
+		<link rel="apple-touch-icon" href="apple-touch-icon.png" />
+		<link rel="stylesheet" type="text/css" href="css/index_v6.css">
+		<link rel="stylesheet" type="text/css" href="css/global_v6.css">
+		<link rel="stylesheet" type="text/css" href="css/index-title.css">
+		<link rel="stylesheet" type="text/css" href="fonts/iconfont.css">
+		<link rel="stylesheet" href="css/layerslider.css" type="text/css">
+
+		<script src="js/jquery.js" type="text/javascript"></script>
+		<script src="js/greensock.js" type="text/javascript"></script>
+		<script src="js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
+		<script type="text/javascript" charset="utf-8" src="js/page_context.js"></script>
+		<link href="css/media-queries.css" rel="stylesheet" type="text/css">
+		<link rel="apple-touch-icon" href="img/icon-152x152.png">
+		<link rel="stylesheet" href="css/master.css">
+		<script type="text/javascript" src="js/pace.min.js"></script>
+		<script type="text/javascript" src="js/script.js"></script>
+	</head>
+	<body id='content-warp'>
+<div id="pointer" style="transform: matrix(0, 0, 0, 0, 0, 0);"></div>
+
+
+
+
+
+		<div id="pagewrap">
+			<div id="page">
+				<!--[if !IE]><!-->
+				<div id="preload">
+					<div class="preload">
+						<div class="preload-logo">
+							<div class="preload-logo1">
+								<svg version="1.1" id="lg" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="220px" height="220px" viewBox="0 0 1000 1000" enable-background="new 0 0 0 0" xml:space="preserve">
+									<path fill="none" stroke="#13e0bc" class="cls-1" d="M511.6 76.3C264.3 76.2 64 276.4 64 523.5 64 718.9 189.3 885 363.8 946c23.5 5.9 19.9-10.8 19.9-22.2v-77.5c-135.7 15.9-141.2-73.9-150.3-88.9C215 726 171.5 718 184.5 703c30.9-15.9 62.4 4 98.9 57.9 26.4 39.1 77.9 32.5 104 26 5.7-23.5 17.9-44.5 34.7-60.8-140.6-25.2-199.2-111-199.2-213 0-49.5 16.3-95 48.3-131.7-20.4-60.5 1.9-112.3 4.9-120 58.1-5.2 118.5 41.6 123.2 45.3 33-8.9 70.7-13.6 112.9-13.6 42.4 0 80.2 4.9 113.5 13.9 11.3-8.6 67.3-48.8 121.3-43.9 2.9 7.7 24.7 58.3 5.5 118 32.4 36.8 48.9 82.7 48.9 132.3 0 102.2-59 188.1-200 212.9 23.5 23.2 38.1 55.4 38.1 91v112.5c0.8 9 0 17.9 15 17.9 177.1-59.7 304.6-227 304.6-424.1 0-247.2-200.4-447.3-447.5-447.3z"/>							</svg>
+
+							</div>
+
+
+
+
+
+
+
+
+							<div class="index" style="margin-top: 30px;">
+								<div class="title">
+									<img src="img/index-title.png" style="width: 100%;">
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!--<![endif]-->
+
+				<div id="header">
+					<header>
+						<div class="container clearfix">
+							<h1 id="logobag">首页</h1>
+							<li class="search bar8" style="margin-right: 20px;">
+								<form id="search_form">
+									<div class="bar8" style="margin-top: 6px;">
+										<i class="icon iconfont icon-sousuo" style="font-size: 24px;color: #9ea2a9;"></i>
+										<input id="bdcsMain" type="text" name="lname" placeholder="搜索 Github">
+									</div>
+								</form>
+							</li>
+
+
+
+							<script>
+								$( "#search_form" ).submit(function( event ) {
+								  window.open('https://github.com/search?q='+document.getElementById('bdcsMain').value)
+								  event.preventDefault();
+								});
+								$( "#search_form_mobile" ).submit(function( event ) {
+								  window.open('https://github.com/search?q='+document.getElementById('bdcsMain-mobile').value)
+								  event.preventDefault();
+								});
+								$("[name='search_btn']").click(function(event) {
+								  window.open('https://github.com/search?q='+document.getElementById('bdcsMain').value)
+								});
+							</script>
+
+						</div>
+					</header>
+					<!-- /header -->
+
+					<!--[if !IE]><!-->
+
+
+
+
+
+
+
+
+
+
+					<div class="top">
+						<div id="dd" class="wrapper-dropdown-5" tabindex="1" style="padding: 0px !important;">
+							<img src="img/nav_icon.png" width="44" height="44">
+							<ul class="dropdown">
+								<div class="index_nav3" style="padding: 0px 0px 0px 9px !important;">
+									<div class="index_nav_icon" style="padding: 0px !important;">
+										<a href="#/">敬请期待</a>
+									</div>
+								</div>
+							</ul>
+						</div>
+						<div class="logo" style="padding: 0px !important;">
+							<img src="img/logo.png" width="44" height="44">
+						</div>
+						<div id="pencil" tabindex="1" style="padding: 0px !important;">
+							<a href="https://github.com/xiaoji235/Pure-Newtab/issues">
+								<img src="img/pencil_icon.png" width="44" height="44">
+							</a>
+						</div>
+					</div>
+				</div>
+				<!--<![endif]-->
+				<!--banner-->
+
+
+
+
+
+
+
+
+<!--滚动图-->
+				<div id="slider-wrapper">
+					<div id="layerslider" class="ls-wp-container" style="width:1349px;height:591px;">
+
+						<div class="ls-slide" data-ls="slidedelay:8000;transition3d:all;">
+							<a href="https://github.com/xiaoji235/Pure-Newtab" class="ls-link" target="_blank">
+								<img src="img/1.jpg" class="ls-bg" alt="欢迎使用 Pure 起始页" />
+							</a>
+						</div>
+
+							<!--<div class="ls-slide" data-ls="slidedelay:10000;transition3d:all;">
+							<a href="#" class="ls-link" target="_blank">
+								<img src="img/2.jpg" class="ls-bg" alt="敬请期待" />
+							</a>
+						</div>-->
+
+						<div class="ls-slide" data-ls="slidedelay:8000;transition3d:all;">
+							<a href="https://xiaoji235.github.io/ios/" class="ls-link" target="_blank">
+								<img src="img/3.jpg" class="ls-bg" alt="徕卡＆蔡司水印捷径" />
+							</a>
+						</div>
+					</div>
+				</div>
+
+
+				<!--功能模块-->
+				<div class="central_k">
+					<div class="central">
+						<div class="design_studio" id="border1">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-Group" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+						<div class="design_studio" id="border2">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-liwuhe" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+						<div class="design_studio" id="border3">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-gjux" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+						<div class="design_studio" id="border4">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-Group3" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+						<div class="design_studio" id="border5">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-GroupCopy6" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+						<div class="design_studio" id="border6">
+							<a href="#" target="_blank">
+								<i class="icon iconfont icon-Group5" id="icon"></i>
+								<br>
+								<font face="微软雅黑">敬 请 期 待</font>
+							</a>
+						</div>
+					</div>
+				</div>
+
+				<!--通用底部信息-->
+				<div id="sidebar">
+					<div class="copyrights">
+						<div class="copyrights_z">
+							<dl>
+								<dd class="copyrights_wz" style="padding-right: 84px;">About
+									<br>
+									<a href="#" target="_blank" title=" ">待添加</a>　
+									<a href="#" target="_blank" title=" "> </a>　
+								</dd>
+								<dd class="copyrights_wz">Link
+									<br>
+									<a href="#" target="_blank">待添加</a>　
+									<a href="#" target="_blank"> </a>
+								</dd>
+
+								<dd class="about_logo">
+									<a href="#" title="Pure" target="_blank">
+										<img src="img/4--logo.png">
+									</a>
+								</dd>
+								<!-- <dd class="about_logo"><a href="About_us.htm" title="关于" target="_blank"><i class="icon iconfont icon-_huaban" style="font-size: 52px;"></i></a></dd>	  -->
+							</dl>
+						</div>
+					</div>
+					<div class="copyrights_c">
+						<div class="copyrights_certificate"><a>因设计.而美丽</a>　    
+						</div>
+
+					</div>
+				</div>
+			</div>
+			<!--[if !IE]><!-->
+			<div class="cb" style="font-size: 12px;float: right; margin-top: -50px;margin-right: 35px;color: #A2A2A2;">
+				<p>
+
+
+
+
+
+
+<!--页脚-->
+					<a target="_blank" style="color: #ababab;">  </a>
+					<a target="_blank" style="color: #ababab;">  </a>
+				</p>
+			</div>
+
+
+
+
+
+
+
+
+
+			<!--<![endif]-->
+			<!--[if !IE]><!-->
+			<div class="copyright">
+				<p style="width: 280px;padding-left: 12px;">
+					因设计.而美丽
+				</p>
+			</div>
+			<!--<![endif]-->
+		</div>
+		</div>
+
+		<!--2d效果 -->
+		<!--
+
+<script>
+		var x1 = document.getElementsByClassName("ls-slide")[0].offsetLeft;
+		var y1 = document.getElementsByClassName("ls-slide")[0].offsetTop;
+		var x2;
+		var index = 0;
+
+		window.onload = function() {
+			timer = setInterval(auto, 3000);
+		}
+
+		function auto() {
+			index++;
+			var q=index%2
+			if(q==0){
+				$(".ls-active").fadeIn();
+			}
+
+		}
+
+		function show() {
+			$(".tu1").attr("src", imgarr[index][0])
+		}
+
+		$(".ls-slide").mousemove(function(e) {
+			check(e);
+
+		})
+
+		function check(e) {
+			var a = e ? e : window.event;
+			x2 = e.offsetLeft - x1;
+			y2 = e.clientY - y1;
+			var LorR = x2 - 610;
+			var RorL = y2 - 250;
+			var x3 = x1 + 610 - e.clientX;
+			var y3 = y1 + 250 - e.clientY;
+			if(LorR >= 0) {
+				if(RorL >= 0) {
+					$(".ls-slide").css("transform", "perspective(3000px)rotateX(" + y2 / 600 * 8 + "deg)rotateY(" + -(-x2 / 1370 * 8) + "deg)");
+
+				}
+
+			} else {
+				$(".ls-slide").css("transform", "perspective(3000px)rotateX(" + (y3 / 600 * 8) + "deg)rotateY(" + -x3 / 1370 * 8 + "deg)");
+			
+			}
+
+		}
+		//手机端效果
+//		var phoneX,phoneY;
+//		
+//		$(".ls-slide").ontouchstart(function(){
+//			phoneX=event.pageX;
+//			phoneY=event.pageY;
+//		})
+//		$(document).ontouchmove(DocumentTouch(){
+//			var x= event.pageX-phoneX;
+//			var y= event.pageY-phoneY;
+//				$(".ls-slide").css("transform", "perspective(3000px)rotateX(" + (y / 600 * 8) + "deg)rotateY(" + -x / 1370 * 8 + "deg)");
+//		})
+	</script>-->
+
+
+		<script>
+			//手机打开浮层
+			$("#dd").click(function(){
+				//var s = $(".dropdown").css('overflow');
+				/*if ( s=='hidden' ){
+					$(".dropdown").css('overflow','visible');
+				}else{
+					$(".dropdown").css('overflow','hidden');
+				}*/
+				var s = $(this).hasClass('active');
+				if ( s ){
+					$(this).removeClass('active');
+				}else{
+					$(this).addClass('active');
+				}
+				var b = $(".search_top").css('display');
+			
+				if ( b=='block'  ){$(".search_top").css('display','none');
+			}
+			})
+			$(".so_icon").click(function(){
+				var s = $(".search_top").css('display');
+				if ( s=='none' ){
+					$(".search_top").css('display','block');
+				}else{
+					$(".search_top").css('display','none');
+				}
+				var b = $("#dd").hasClass('active');
+				if ( b  ){$("#dd").removeClass('active');
+				}
+			})
+		</script>
+		<!-- Initializing the slider -->
+		<script>
+			jQuery("#layerslider").layerSlider({
+						pauseOnHover: false,
+						skin: 'borderlessdark3d',
+						hoverBottomNav: true,
+						skinsPath: './layerslider/skins/'
+					});
+		</script>
+
+	</body>
+</html>
