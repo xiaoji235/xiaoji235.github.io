@@ -1,0 +1,12 @@
+
+* {
+    margin:0;
+    padding:0;
+    list-style-image:none;
+    list-style-type:none;
+}
+html {
+    -webkit-text-size-adjust:none;
+        filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);
+        /*-webkit-filter: grayscale(100%);*/
+}
