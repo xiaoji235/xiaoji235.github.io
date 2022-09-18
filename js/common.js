@@ -5,7 +5,7 @@
 	rightNav += "<li><a href='#' target='_blank'>待添加</a></li>";//可添加多行（链接）
 	rightNav += "<hr>";
 	rightNav += "<li class='qrBtn'><a href='#' target='_blank'>敬请期待</a></li>";
-	rightNav += "<li class='qrBox'><img src='img/qr.png' alt='Pure'/></li>";
+	rightNav += "<li class='qrBox'><img src='https://dl3.img.timecdn.cn/2022/09/18/qr.png' alt='Pure'/></li>";
 	rightNav += "</ul>";
 	$("body")
 		.append(rightNav);
