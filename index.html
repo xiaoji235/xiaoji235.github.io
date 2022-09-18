@@ -13,7 +13,7 @@
 		<meta name="msapplication-TileImage" content="img/icon-144x144.png">
 		<meta name="msapplication-TileColor" content="#2F3BA2">
 
-		<link rel="shortcut icon" href="img/ico.ico" type="img/x-icon" />
+		<link rel="shortcut icon" href="https://dl2.img.timecdn.cn/2022/09/18/4--logo.png" type="img/x-icon" />
 		<link rel="apple-touch-icon" href="img/touch-icon-iphone.png">
 		<link rel="apple-touch-icon" sizes="76x76" href="img/touch-icon-ipad.png">
 		<link rel="apple-touch-icon" sizes="120x120" href="img/touch-icon-iphone-retina.png">
@@ -31,15 +31,20 @@
 		<script src="js/greensock.js" type="text/javascript"></script>
 		<script src="js/layerslider.kreaturamedia.jquery.js" type="text/javascript"></script>
 		<script type="text/javascript" charset="utf-8" src="js/page_context.js"></script>
+		<script src="js/common.js" type="text/javascript"></script>
 		<link href="css/media-queries.css" rel="stylesheet" type="text/css">
 		<link rel="apple-touch-icon" href="img/icon-152x152.png">
 		<link rel="stylesheet" href="css/master.css">
 		<script type="text/javascript" src="js/pace.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		<script type="text/javascript" src="js/cssmode.js"></script>
 	</head>
 	<body id='content-warp'>
 <div id="pointer" style="transform: matrix(0, 0, 0, 0, 0, 0);"></div>
-
+<script type="text/javascript">
+var isindex=true;var title="";var visitor=" "
+</script>
+<script type="text/javascript">window.onload=getCSS();</script>
 
 
 
@@ -155,13 +160,13 @@
 
 						<div class="ls-slide" data-ls="slidedelay:8000;transition3d:all;">
 							<a href="https://github.com/xiaoji235/Pure-Newtab" class="ls-link" target="_blank">
-								<img src="https://dl.img.timecdn.cn/2022/09/18/1.jpg" class="ls-bg" alt="欢迎使用 Pure 起始页" />
+								<img src="https://dl.img.timecdn.cn/2022/09/18/1.jpgg" class="ls-bg" alt="欢迎使用 Pure 起始页" />
 							</a>
 						</div>
 
 							<!--<div class="ls-slide" data-ls="slidedelay:10000;transition3d:all;">
 							<a href="#" class="ls-link" target="_blank">
-								<img src="https://cdn.jsdelivr.net/gh/xiaoji235/xiaoji235.github.io/master/img/2.jpg" class="ls-bg" alt="敬请期待" />
+								<img src="img/2.jpg" class="ls-bg" alt="敬请期待" />
 							</a>
 						</div>-->
 
@@ -239,8 +244,10 @@
 								</dd>
 
 								<dd class="about_logo">
-									<a href="#" title="Pure" target="_blank">
-										<img src="https://dl2.img.timecdn.cn/2022/09/18/4--logo.png">
+									<a title="Pure" target="_blank">
+										<img src="https://dl2.img.timecdn.cn/2022/09/18/4--logo.png" id="topbtn">
+										<script type="text/javascript">document.getElementById("topbtn").onclick = function() {document.documentElement.scrollTop = 0}
+</script>
 									</a>
 								</dd>
 								<!-- <dd class="about_logo"><a href="About_us.htm" title="关于" target="_blank"><i class="icon iconfont icon-_huaban" style="font-size: 52px;"></i></a></dd>	  -->
