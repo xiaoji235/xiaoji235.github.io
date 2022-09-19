@@ -2,9 +2,9 @@
 	var rightNav = "";
 	rightNav += "<ul class='ccRightNav'>";
 	rightNav += "<li><a href='#' target='_blank'>复制标签页</a></li>";
-	rightNav += "<li><a href='#' target='_blank'>待添加</a></li>";//可添加多行（链接）
+	rightNav += "<li><a href='https://space.bilibili.com/420259074?spm_id_from=333.337.search-card.all.click' target='_blank'>BILIBILI</a></li>";//可添加多行（链接）
 	rightNav += "<hr>";
-	rightNav += "<li class='qrBtn'><a href='#' target='_blank'>敬请期待</a></li>";
+	rightNav += "<li class='qrBtn'><a target='_blank'>敬请期待</a></li>";
 	rightNav += "<li class='qrBox'><img src='https://dl3.img.timecdn.cn/2022/09/18/qr.png' alt='Pure'/></li>";
 	rightNav += "</ul>";
 	$("body")
