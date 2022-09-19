@@ -428,7 +428,7 @@ function scrollPlus() {
 		if (!b) {
 			b = document.createElement("div");
 			b.setAttribute("id", "IndicatorBox");
-			b.setAttribute("style", "width:20px;background:url(img/nav_icon.png) 14px 10px no-repeat rgb(175, 175, 175);min-height:30px;text-align:center;border-top-left-radius: 100px;padding: 6px 8px 0px 17px;border-bottom-left-radius: 100px;position: fixed; top: -40px; right: 0;overflow: hidden; z-index: 102400;font-family:Arial !important;cursor:n-resize;cursor:ns-resize;");
+			b.setAttribute("style", "width:20px;background:url(https://dl.img.timecdn.cn/2022/09/19/snav_icon.png) 14px 10px no-repeat rgb(175, 175, 175);min-height:30px;text-align:center;border-top-left-radius: 100px;padding: 6px 8px 0px 17px;border-bottom-left-radius: 100px;position: fixed; top: -40px; right: 0;overflow: hidden; z-index: 102400;font-family:Arial !important;cursor:n-resize;cursor:ns-resize;");
 			document.body.appendChild(b);
 			b.addEventListener('click', function() {
 				VScrollOn = 0;
