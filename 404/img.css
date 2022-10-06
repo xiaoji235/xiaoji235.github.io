@@ -1,0 +1,40 @@
+.sakana-box .sakana-character{
+    width: 270px;
+    height: 300px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 220px;
+    cursor: pointer;
+    pointer-events: auto;
+    transform-origin: 50% 400px;
+    background: no-repeat 50% 50%;
+    background-size: cover;
+}
+
+.sakana-box .sakana-bed{
+width: 160px;
+    height: 20px;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    bottom: 0;
+    background: rgba(255,255,255,.5) no-repeat 50% 50%;
+    border-radius: 2px;
+    cursor: pointer;
+    background-size: 20px 20px;
+    box-shadow: 0 0 0 2px rgb(0 0 0 / 5%);
+}
+
+.sakana-box[data-can-switch-character=true] .sakana-bed{
+background-image: url(https://dl2.img.timecdn.cn/2022/10/06/love.png)
+}
+.sakana-box .sakana-character[data-character=takina]{
+background-image: url(https://dl2.img.timecdn.cn/2022/10/06/ralsei.png)
+}
+
+.sakana-box .sakana-character[data-character=chisato]{
+background-image: url(https://dl2.img.timecdn.cn/2022/10/06/ralsei.png)
+}
