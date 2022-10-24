@@ -1,0 +1,25 @@
+﻿/**暗黑主题**/
+
+.mdui-toolbar,.footer,.mdui-table{
+	background-color:#212121 !important
+}
+.title,.mdui-textfield-label,.mdui-dialog-title,.mdui-dialog-content{
+	color: white !important;
+}
+
+body,.mdui-dialog-alert{
+	background-color:#303030!important;
+}
+
+input#link{
+	color:rgba(255,255,255,.7)!important
+}
+
+input#passcode{
+	color:rgba(255,255,255,.7)!important
+}
+
+.mdui-textfield-input{
+	border-bottom:1px solid rgb(255 255 255)!important
+}
+
