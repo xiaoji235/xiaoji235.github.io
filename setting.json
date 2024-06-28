@@ -1,8 +1,8 @@
 {
-    "title": "Auroraの主页",
+    "title": "xiaoji235の主页",
     "description": "一个默默无闻的主页",
-    "keywords": "Aurora,个人主页",
-    "author": "Aurora",
+    "keywords": "xiaoji235,个人主页",
+    "author": "xiaoji235",
     "logo_img": "./img/icon/avatar.jpg",
     "logo_text_1": "wuhobin",
     "logo_text_2": "top",
@@ -12,35 +12,35 @@
     "bilibili": "495003013",
     "facebook": "bottom_user",
     "link_1": [
-        "http://blog.wuhobin.top/",
-        "fa-solid fa-blog",
-        "博客"
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
+        "起始页"
     ],
     "link_2": [
-        "https://tongji.baidu.com/",
-        "fa-solid fa-cloud",
-        "统计"
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
+        "起始页"
     ],
     "link_3": [
-        "http://www.wuhobin.top/",
-        "fa-solid fa-compass",
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
         "起始页"
     ],
     "link_4": [
-        "https://codenote.wuhobin.top",
-        "fa-solid fa-book-bookmark",
-        "编程宝典"
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
+        "起始页"
     ],
     "link_5": [
-        "http://www.wuhobin.top/",
-        "fa-solid fa-flask",
-        "开发中..."
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
+        "起始页"
     ],
     "link_6": [
-        "http://www.wuhobin.top/",
-        "fa-solid fa-flask",
-        "敬请期待..."
+        "https://pure-newtab.netlify.app/",
+        "fa-solid fa-newtab",
+        "起始页"
     ],
-    "Copyright_text": "Aurora",
-    "beian": "鄂ICP备20006685号"
+    "Copyright_text": "xiaoji235",
+    "beian": ""
 }
