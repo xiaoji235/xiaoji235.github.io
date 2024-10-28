@@ -57,7 +57,7 @@ jobs:
 #---------   v2ray    ---------#
 
 
-  job1:
+  v2ray:
     runs-on: ubuntu-latest
 
     steps:
