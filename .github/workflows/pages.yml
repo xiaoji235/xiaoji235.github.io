@@ -52,3 +52,46 @@ jobs:
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4
+        
+
+#---------   v2ray    ---------#
+
+
+  job1:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+
+    - name: 复制模板
+      run: |
+        cp source/v2ray.md v2ray.md
+
+
+    - name: curl README.md
+      run: |
+        curl https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/README.md > tmp.txt
+
+    - name: 提交变量<date_name>
+      run: |
+        DATE=$(date '+%Y-%m-%d')
+          sed -i "s/<date_name>/$DATE/" v2ray.md
+
+    - name: 提交变量<time_name>
+      run: |
+        TIME=$(date -u -d "+8 hours" '+%Y年%m月%d日')
+          sed -i "s/<time_name>/$TIME/" v2ray.md
+
+    - name: 提交变量<posts_name>
+      run: |
+        cat tmp.txt >> v2ray.md
+          
+
+    - name: 重命名和删除临时文本
+      run: |
+        rm -f tmp.txt
+        DATE=$(date '+%Y-%m-%d')
+        rm -f source/_posts/"$DATE".md || ture
+        mv v2ray.md source/_posts/"$DATE".md
