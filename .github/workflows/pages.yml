@@ -4,6 +4,10 @@ on:
   push:
     branches:
       - gh-pages # default branch
+  schedule:
+    - cron: "30 2 * * *" # 每天的10:30分运行（UTC+8 Asia/ShangHai）
+
+  workflow_dispatch:
 
 jobs:
   build:
