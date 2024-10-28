@@ -4,6 +4,9 @@ on:
   push:
     branches:
       - gh-pages # default branch
+    paths:
+      - 'source/_posts/*'
+  workflow_dispatch:
 
 jobs:
   build:
