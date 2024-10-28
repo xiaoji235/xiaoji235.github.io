@@ -2,7 +2,7 @@ name: 节点更新
 
 on:
   schedule:
-    - cron: "0 12 * * *" 
+    - cron: "30 2 * * *" # UTC+8 的每天10:30分运行
   workflow_dispatch:
 
 jobs:
