@@ -1,8 +1,8 @@
 ---
 title: 欢迎使用Pure起始页！
 tags: [浏览器主页]
-index_img: https://cdn.jsdelivr.net/gh/xiaoji235/Pure-Newtab/preview/img.png
-banner_img: https://cdn.jsdelivr.net/gh/xiaoji235/Pure-Newtab/preview/img.png
+index_img: https://dl.img.timecdn.cn/2024/10/28/newtab.png
+banner_img: https://dl.img.timecdn.cn/2024/10/28/newtab.png
 date: 2022-10-27 20:00:00
 ---
 
