@@ -5,7 +5,7 @@ on:
     branches:
       - gh-pages # default branch
   schedule:
-    - cron: "0 */24 * * *" # 每隔24h运行一次
+    - cron: "0 */12 * * *" # 每隔12h运行一次并更新当天文章内容
 
   workflow_dispatch:
 
