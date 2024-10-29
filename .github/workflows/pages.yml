@@ -66,6 +66,7 @@ jobs:  # 任务列表
 
 
   build:
+    needs: v2ray
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
