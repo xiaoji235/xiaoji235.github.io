@@ -1,12 +1,15 @@
 name: 节点更新
 
 on:
+  push:
   schedule:
-    - cron: "30 2 * * *" # 每天的10:30分运行（UTC+8 Asia/ShangHai）
+    - cron: "0 */6 * * *" # 每隔6h运行一次并更新当天文章内容
   workflow_dispatch:
+jobs:  # 任务列表
 
-jobs:
-  run-script:
+#--------------   v2ray    --------------#
+
+  v2ray:
     runs-on: ubuntu-latest
 
     steps:
@@ -25,7 +28,7 @@ jobs:
 
     - name: 提交变量<date_name>
       run: |
-        DATE=$(date '+%Y-%m-%d')
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d')
           sed -i "s/<date_name>/$DATE/" v2ray.md
 
     - name: 提交变量<time_name>
@@ -41,18 +44,30 @@ jobs:
     - name: 重命名和删除临时文本
       run: |
         rm -f tmp.txt
-        DATE=$(date '+%Y-%m-%d')
-        rm -f source/_posts/"$DATE".md || ture
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d')
+        rm -f source/_posts/"$DATE".md || true
         mv v2ray.md source/_posts/"$DATE".md
-        
-        
+
+
     - name: Commit and push if there are changes
       run: |
         git config --local user.email "action@github.com"
         git config --local user.name "GitHub Action"
         git add -A
-        if [[ `git status --porcelain` ]]; then
-          git commit -m "节点更新" && git push
-        else
-          echo "未发布"
-        fi
+        git commit -m "自动推文" && git push
+
+
+#--------------    触发 pages.yml    --------------#
+
+
+
+  trigger:
+   needs: v2ray
+   runs-on: ubuntu-latest
+   steps:
+      - name: 触发 pages.yml
+        run: |
+          curl -XPOST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+          -d '{"event_type": "pages-activator"}'
