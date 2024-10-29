@@ -5,7 +5,7 @@ on:
     branches:
       - gh-pages # default branch
   schedule:
-    - cron: "30 2 * * *" # 每天的10:30分运行（UTC+8 Asia/ShangHai）
+    - cron: "0 */24 * * *" # 每隔24h运行一次
 
   workflow_dispatch:
 
