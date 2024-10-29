@@ -33,7 +33,7 @@ jobs:  # 任务列表
 
     - name: 提交变量<date_name>
       run: |
-        DATE=$(date '+%Y-%m-%d')
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d')
           sed -i "s/<date_name>/$DATE/" v2ray.md
 
     - name: 提交变量<time_name>
@@ -49,7 +49,7 @@ jobs:  # 任务列表
     - name: 重命名和删除临时文本
       run: |
         rm -f tmp.txt
-        DATE=$(date '+%Y-%m-%d')
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d')
         rm -f source/_posts/"$DATE".md || true
         mv v2ray.md source/_posts/"$DATE".md
 
