@@ -51,7 +51,6 @@ jobs:  # 任务列表
 
     - name: 删除去年的v2ray文章
       run: |
-        rm -f tmp.txt
         DATE=$(date -u -d "+8 hours" '+%Y-')
         rm -f source/_posts/"$DATE"*.md || true
 
