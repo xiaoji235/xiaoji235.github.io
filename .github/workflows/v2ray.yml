@@ -49,6 +49,14 @@ jobs:  # 任务列表
         mv v2ray.md source/_posts/"$DATE".md
 
 
+    - name: 删除去年的v2ray文章
+      run: |
+        rm -f tmp.txt
+        DATE=$(date -u -d "+8 hours" '+%Y-')
+        rm -f source/_posts/"$DATE"*.md || true
+
+
+
     - name: Commit and push if there are changes
       run: |
         git config --local user.email "action@github.com"
