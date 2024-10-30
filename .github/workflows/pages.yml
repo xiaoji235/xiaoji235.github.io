@@ -9,7 +9,7 @@ on:
  # workflow_dispatch:
 
   repository_dispatch:
-    types: [pages-activator]
+    types: [博客文章更新]
 
 
 jobs:  # 任务列表
