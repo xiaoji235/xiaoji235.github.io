@@ -52,7 +52,7 @@ jobs:  # 任务列表
     - name: 删除去年的v2ray文章
       run: |
         DATE=$(date -u -d "+8 hours" '+%Y')
-        YEAR=$((DATE - 1)
+        YEAR=$((DATE - 1))
         rm -f source/_posts/"$YEAR"-*.md || true
 
 
