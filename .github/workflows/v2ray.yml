@@ -53,7 +53,7 @@ jobs:  # 任务列表
       run: |
         DATE=$(date -u -d "+8 hours" '+%Y')
         YEAR=$((DATE - 1))
-        rm -f source/_posts/"$YEAR"-*.md || true
+        rm -f source/_posts/"$YEAR"-*-vpn.md || true
 
 
 
