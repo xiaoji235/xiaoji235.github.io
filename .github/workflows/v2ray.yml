@@ -51,9 +51,13 @@ jobs:  # 任务列表
 
     - name: 删除去年的v2ray文章
       run: |
-        DATE=$(date -u -d "+8 hours" '+%Y')
-        YEAR=$((DATE - 1))
-        rm -f source/_posts/"$YEAR"-*-vpn.md || true
+        #DATE=$(date -u -d "+8 hours" '+%Y')
+        #YEAR=$((DATE - 1))
+        #rm -f source/_posts/"$YEAR"-*-vpn.md || true
+
+        YEAR=$(date -d "last month" +%Y)
+        MONTH=$(date -d "last month" +%m)
+        rm -f source/_posts/"$YEAR"-"$MONTH"-*-vpn.md
 
 
 
