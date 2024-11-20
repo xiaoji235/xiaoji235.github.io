@@ -27,7 +27,7 @@ jobs:
         cp source/about/index.md.bak source/about/index.md
         BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
         BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
-        echo "Bio: $BIO" >> /source/about/index.md
+        echo "Bio: $BIO" >> source/about/index.md
 
     - name: Commit and push if there are changes
       run: |
