@@ -6,7 +6,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  run-script:
+  blog:
     runs-on: ubuntu-latest
 
     steps:
@@ -23,8 +23,8 @@ jobs:
 
     - name: 更新”关于页“bio
       run: |
-        rm -f /source/about/index.md || true
-        cp /source/about/index.md.bak /source/about/index.md
+        rm -f source/about/index.md || true
+        cp source/about/index.md.bak source/about/index.md
         BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
         BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
         echo "Bio: $BIO" >> /source/about/index.md
@@ -35,3 +35,20 @@ jobs:
         git config --local user.name "GitHub Action"
         git add -A
         git commit -m "博客信息更新" && git push
+
+
+
+#--------------    触发 pages.yml    --------------#
+
+
+
+  trigger:
+   needs: blog
+   runs-on: ubuntu-latest
+   steps:
+      - name: 触发 pages.yml
+        run: |
+          curl -XPOST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+          -d '{"event_type": "博客文章更新"}'
