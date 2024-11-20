@@ -18,8 +18,7 @@ jobs:
         rm -f _config.fluid.yml || true
         cp _config.fluid.yml.bak _config.fluid.yml
         NAME=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.name')
-        echo "::set-output name=name::$NAME"
-        sed -i "s|<MYNAME>|${{ steps.update_name.outputs.name }}|g" _config.fluid.yml
+        sed -i "s/<MYNAME>/$NAME/g" config.yml
 
     - name: 更新”关于页“bio
       run: |
