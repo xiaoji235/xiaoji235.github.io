@@ -1,0 +1,37 @@
+name: 博客信息更新
+
+on:
+  schedule:
+    - cron: "0 */48 * * *" # 每隔48h运行一次
+  workflow_dispatch:
+
+jobs:
+  run-script:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: 更新”关于页“用户名
+      run: |
+        rm -f _config.fluid.yml || true
+        cp _config.fluid.yml.bak _config.fluid.yml
+        NAME=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.name')
+        echo "::set-output name=name::$NAME"
+        sed -i "s|<MYNAME>|${{ steps.update_name.outputs.name }}|g" _config.fluid.yml
+
+    - name: 更新”关于页“bio
+      run: |
+        rm -f /source/about/index.md || true
+        cp /source/about/index.md.bak /source/about/index.md
+        BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
+        BIO=$(curl -s https://api.github.com/users/xiaoji235 | jq -r '.bio')
+        echo "Bio: $BIO" >> /source/about/index.md
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "博客信息更新" && git push
