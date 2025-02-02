@@ -11,6 +11,7 @@ date: 2025-2-1 20:00:00
 ### ollama 安装地址：
  - 标准版：`curl -fsSL https://cdn.jsdelivr.net/gh/xiaoji235/script-bank/ollama/install.sh | sh`
  - 汉化版：`curl -fsSL https://cdn.jsdelivr.net/gh/xiaoji235/script-bank/ollama/install-zh_CN.sh | sh`
+- 安卓termux版：`wget https://cdn.jsdelivr.net/gh/xiaoji235/script-bank/ollama/ollama-android.sh && bash ollama-installer.sh`
 
 ## 接着复制以下代码运行deepseek r1 1.5b镜像（没有会自动拉取）
 `ollama run deepseek-r1:1.5b`
