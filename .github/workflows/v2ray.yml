@@ -1,0 +1,79 @@
+name: 节点更新
+
+on:
+  push:
+  schedule:
+    - cron: "0 */6 * * *" # 每隔6h运行一次并更新当天文章内容
+  workflow_dispatch:
+jobs:  # 任务列表
+
+#--------------   v2ray    --------------#
+
+  v2ray:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+
+    - name: 复制模板
+      run: |
+        cp source/v2ray.md v2ray.md
+
+
+    - name: curl README.md
+      run: |
+        curl https://raw.githubusercontent.com/xiaoji235/airport-free/refs/heads/main/README.md > tmp.txt
+
+    - name: 提交变量<date_name>
+      run: |
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d')
+          sed -i "s/<date_name>/$DATE/" v2ray.md
+
+    - name: 提交变量<time_name>
+      run: |
+        TIME=$(date -u -d "+8 hours" '+%Y年%m月%d日')
+          sed -i "s/<time_name>/$TIME/" v2ray.md
+
+    - name: 提交变量<posts_name>
+      run: |
+        cat tmp.txt >> v2ray.md
+          
+
+    - name: 删除旧文章
+      run: |
+        rm -f source/_posts/*-vpn.md
+
+
+    - name: 重命名和删除临时文本
+      run: |
+        rm -f tmp.txt
+        DATE=$(date -u -d "+8 hours" '+%Y-%m-%d-vpn')
+        rm -f source/_posts/"$DATE".md || true
+        mv v2ray.md source/_posts/"$DATE".md
+
+
+
+    - name: Commit and push if there are changes
+      run: |
+        git config --local user.email "action@github.com"
+        git config --local user.name "GitHub Action"
+        git add -A
+        git commit -m "自动推文" && git push
+
+
+#--------------    触发 pages.yml    --------------#
+
+
+
+  trigger:
+   needs: v2ray
+   runs-on: ubuntu-latest
+   steps:
+      - name: 触发 pages.yml
+        run: |
+          curl -XPOST -H "Authorization: token ${{ secrets.PERSONAL_ACCESS_TOKEN }}" \
+          -H "Accept: application/vnd.github.v3+json" \
+          "https://api.github.com/repos/${{ github.repository }}/dispatches" \
+          -d '{"event_type": "博客文章更新"}'
