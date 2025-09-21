@@ -2,7 +2,7 @@ name: 博客信息更新
 
 on:
   schedule:
-    - cron: "0 */48 * * *" # 每隔48h运行一次
+    - cron: "0 */96 * * *" # 每隔48h运行一次
   workflow_dispatch:
 
 jobs:
