@@ -3,7 +3,6 @@ title: Linux搭建deepseek（特快地址）
 tags: [AI]
 categories: [AI, deepseek]
 index_img: https://dl2.img.timecdn.cn/2025/02/01/deepseek.jpg
-banner_img: https://dl2.img.timecdn.cn/2025/02/01/deepseek.jpg
 date: 2025-2-1 20:00:00
 ---
 
