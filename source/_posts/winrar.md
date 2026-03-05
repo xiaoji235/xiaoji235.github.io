@@ -17,10 +17,11 @@ date: 2026-3-5 20:25:00
 - 下载完成后，请自行安装WinRAR；
 - 安装完成后，点击“生成授权文件”即可完成注册！
 # 效果图
-[效果图](https://dl.img.timecdn.cn/2026/03/05/557903443-473d177e-640b-45c4-b8df-bef716dba1a3.png)
+![效果图](https://dl.img.timecdn.cn/2026/03/05/557903443-473d177e-640b-45c4-b8df-bef716dba1a3.png)
 # 警告
 - 该程序仅供学习研究，禁止商业用途！
 # 致谢
 感谢[bitcookies](https://github.com/bitcookies)大佬的开源！
+
 
 
