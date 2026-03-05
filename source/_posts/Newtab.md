@@ -3,7 +3,6 @@ title: 欢迎使用Pure起始页！
 tags: [浏览器主页]
 categories: [美化, 浏览器主页]
 index_img: https://dl.img.timecdn.cn/2024/10/28/newtab.png
-banner_img: https://dl3.img.timecdn.cn/2024/11/01/banner.jpg
 date: 2022-10-27 20:00:00
 ---
 
