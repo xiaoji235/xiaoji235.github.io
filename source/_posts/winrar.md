@@ -3,7 +3,6 @@ title: 一键获取和注册winRAR
 tags: [winRAR]
 categories: [软件, 实用软件]
 index_img: https://dl3.img.timecdn.cn/2026/03/05/winrar.png
-banner_img: https://dl3.img.timecdn.cn/2024/11/01/banner.jpg
 date: 2026-3-5 20:25:00
 ---
 
@@ -24,4 +23,5 @@ date: 2026-3-5 20:25:00
 - 该程序仅供学习研究，禁止商业用途！
 
 # 致谢
+
 感谢[bitcookies](https://github.com/bitcookies)大佬的开源！
